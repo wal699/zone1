@@ -1,26 +1,160 @@
 <!doctype html>
-<html lang=en>
+<html lang="en">
 <head>
-<meta charset=UTF-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<title>wal69</title>
-<style>@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap);body{margin:0;padding:0;font-family:Montserrat,sans-serif;background:radial-gradient(circle at top right,#1e1e2f,#000);color:#fff;height:100vh;display:flex;justify-content:center;align-items:center;animation:bgPulse 10s ease-in-out infinite}@keyframes bgPulse{0%,100%{background:radial-gradient(circle at top right,#1e1e2f,#000)}50%{background:radial-gradient(circle at top right,#2e2e4f,#111)}}.container{background:rgba(255,255,255,.06);backdrop-filter:blur(25px);padding:40px 30px;border-radius:25px;box-shadow:0 10px 40px rgba(0,0,0,.5);text-align:center;max-width:420px;width:90%}h1{font-size:2.4em;margin-bottom:25px;background:linear-gradient(45deg,#ff416c,#ff4b2b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:700}.btn{display:block;width:100%;margin:12px 0;padding:14px 25px;font-size:1.1em;font-weight:600;border-radius:50px;border:none;color:#fff;background:linear-gradient(135deg,#ff416c,#ff4b2b);cursor:pointer;transition:all .3s ease;box-shadow:0 4px 15px rgba(255,75,43,.4)}.btn:hover{transform:scale(1.05);box-shadow:0 6px 25px rgba(255,75,43,.6)}.btn:active{transform:scale(.97)}.desc{margin-top:30px;font-size:.95em;color:#ddd;line-height:1.5;text-align:left}.desc p::before{content:"👉 "}@media (max-width:500px){h1{font-size:1.8em}}</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>wal69</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at top right, #1e1e2f, #000);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: bgPulse 10s ease-in-out infinite;
+    }
+
+    @keyframes bgPulse {
+      0%, 100% {
+        background: radial-gradient(circle at top right, #1e1e2f, #000);
+      }
+      50% {
+        background: radial-gradient(circle at top right, #2e2e4f, #111);
+      }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(25px);
+      padding: 40px 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      max-width: 420px;
+      width: 90%;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 25px;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin: 12px 0;
+      padding: 14px 25px;
+      font-size: 1.1em;
+      font-weight: 600;
+      border-radius: 50px;
+      border: none;
+      color: #fff;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(255, 75, 43, 0.6);
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    .desc {
+      margin-top: 30px;
+      font-size: 0.95em;
+      color: #ddd;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    .desc p::before {
+      content: "👉 ";
+    }
+
+    #loader {
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      z-index: 10;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class=container>
-<h1>🔥 wal69 Zone 🔥</h1>
-<button class=btn onclick='openWithAd("https://your-ad-url.com","https://video-page.com")'>🎬 Video Here</button>
-<button class=btn onclick='openWithAd("https://your-ad-url.com","https://chat-page.com")'>💬 Chat Here</button>
-<button class=btn onclick='openWithAd("https://your-ad-url.com","https://photo-page.com")'>📷 Photos Here</button>
-<button class=btn onclick='openWithAd("https://your-ad-url.com","https://deal-page.com")'>👩‍🦰 Deal</button>
-<div class=desc>
-<p>වීඩියෝ එක බලන්න ආවනම් <strong>Video Here</strong> කියන එක ඔබන්න.</p>
-<p>Chat කරලා ආතල් එකක් ගන්න ආවනම් <strong>Chat Here</strong> කියන එක ඔබන්න.</p>
-<p>Photos බලන්න ආවනම් <strong>Photos Here</strong> කියන එක ඔබන්න.</p>
-<p>කෙනෙක් හොයාගන්න ආවනම් <strong>Deal</strong> කියන එක ඔබන්න.</p>
-</div>
-</div>
-<script>function openWithAd(n,o){window.open(o,"_blank"),window.location.href=n}</script>
-<script>document.addEventListener("keydown",(function(e){if("F12"===e.key||e.ctrlKey&&e.shiftKey&&["I","J","C"].includes(e.key)||e.ctrlKey&&"u"===e.key)return e.preventDefault(),!1})),document.addEventListener("contextmenu",(function(e){e.preventDefault()}))</script>
+  <div class="container">
+    <div id="loader">⏳ Redirecting, please wait...</div>
+    <h1>🔥 wal69 Zone 🔥</h1>
+    <button class="btn" onclick='openWithAd("https://your-ad-url.com","https://video-page.com")'>🎬 Video Here</button>
+    <button class="btn" onclick='openWithAd("https://your-ad-url.com","https://chat-page.com")'>💬 Chat Here</button>
+    <button class="btn" onclick='openWithAd("https://your-ad-url.com","https://photo-page.com")'>📷 Photos Here</button>
+    <button class="btn" onclick='openWithAd("https://your-ad-url.com","https://deal-page.com")'>👩‍🦰 Deal</button>
+    <div class="desc">
+      <p>වීඩියෝ එක බලන්න ආවනම් <strong>Video Here</strong> කියන එක ඔබන්න.</p>
+      <p>Chat කරලා ආතල් එකක් ගන්න ආවනම් <strong>Chat Here</strong> කියන එක ඔබන්න.</p>
+      <p>Photos බලන්න ආවනම් <strong>Photos Here</strong> කියන එක ඔබන්න.</p>
+      <p>කෙනෙක් හොයාගන්න ආවනම් <strong>Deal</strong> කියන එක ඔබන්න.</p>
+    </div>
+  </div>
+
+  <script>
+    function openWithAd(adUrl, targetUrl) {
+      document.getElementById('loader').style.display = 'flex';
+      // Open the main content in a new tab immediately
+      window.open(targetUrl, "_blank");
+
+      // Wait 2 seconds then redirect current tab to ad
+      setTimeout(() => {
+        window.location.href = adUrl;
+      }, 2000);
+    }
+
+    // Disable dev tools shortcuts
+    document.addEventListener("keydown", function (e) {
+      if (
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) ||
+        (e.ctrlKey && e.key === "u")
+      ) {
+        e.preventDefault();
+        return false;
+      }
+    });
+
+    // Disable right-click
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+  </script>
 </body>
 </html>
