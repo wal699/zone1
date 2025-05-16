@@ -1,28 +1,152 @@
 <!doctype html>
-<html lang=en>
+<html lang="en">
 <head>
-<meta charset=UTF-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<title>wal69</title>
-<style>@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap);body{margin:0;padding:0;font-family:Montserrat,sans-serif;background:radial-gradient(circle at top right,#1e1e2f,#000);color:#fff;height:100vh;display:flex;justify-content:center;align-items:center;animation:bgPulse 10s ease-in-out infinite}@keyframes bgPulse{0%,100%{background:radial-gradient(circle at top right,#1e1e2f,#000)}50%{background:radial-gradient(circle at top right,#2e2e4f,#111)}}.container{background:rgba(255,255,255,.06);backdrop-filter:blur(25px);padding:40px 30px;border-radius:25px;box-shadow:0 10px 40px rgba(0,0,0,.5);text-align:center;max-width:420px;width:90%;position:relative}h1{font-size:2.4em;margin-bottom:25px;background:linear-gradient(45deg,#ff416c,#ff4b2b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:700}.btn{display:block;width:100%;margin:12px 0;padding:14px 25px;font-size:1.1em;font-weight:600;border-radius:50px;border:none;color:#fff;background:linear-gradient(135deg,#ff416c,#ff4b2b);cursor:pointer;transition:all .3s ease;box-shadow:0 4px 15px rgba(255,75,43,.4)}.btn:hover{transform:scale(1.05);box-shadow:0 6px 25px rgba(255,75,43,.6)}.btn:active{transform:scale(.97)}.desc{margin-top:30px;font-size:.95em;color:#ddd;line-height:1.5;text-align:left}.desc p::before{content:"👉 "}#loader{display:none;position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.85);color:#fff;font-size:1.2em;font-weight:700;justify-content:center;align-items:center;border-radius:25px;z-index:10}@media (max-width:500px){h1{font-size:1.8em}}</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>wal69</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+    :root{--primary:#ff0066;--secondary:#000;--accent:#222;--text:#fff;--text-secondary:#aaa;--gold:#ffcc00;--shadow:rgba(0,0,0,0.7)}
+    *{box-sizing:border-box;margin:0;padding:0;transition:all 0.2s ease}
+    body{font-family:'Roboto',sans-serif;background:#000;color:var(--text);min-height:100vh;display:flex;justify-content:center;align-items:center;padding:15px;position:relative;overflow-x:hidden;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23300000' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),radial-gradient(circle, #200000 0%, #000000 100%);background-attachment:fixed}
+    
+    /* Premium Container Design */
+    .container{width:100%;max-width:480px;position:relative;z-index:1;backdrop-filter:blur(10px);box-shadow:0 0 40px 10px rgba(255,0,102,0.2);overflow:hidden;border-radius:8px}
+    
+    /* Badge */
+    .premium-badge{position:absolute;top:15px;right:15px;background:var(--gold);color:#000;padding:3px 12px;border-radius:3px;font-weight:700;font-size:12px;text-transform:uppercase;z-index:5;box-shadow:0 2px 5px rgba(0,0,0,0.3);transform:rotate(5deg);animation:pulse-badge 2s infinite}
+    @keyframes pulse-badge{0%{transform:rotate(5deg) scale(1)}50%{transform:rotate(5deg) scale(1.05)}100%{transform:rotate(5deg) scale(1)}}
+    
+    /* Header Section */
+    .header{position:relative;background:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMDAwIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=');overflow:hidden;text-align:center;padding:35px 20px 45px;background-color:#0a0a0a}
+    .header-content{position:relative;z-index:2}
+    .header::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);z-index:1}
+    
+    /* Title styling */
+    .main-title{font-size:2.2em;text-transform:uppercase;margin-bottom:15px;color:var(--primary);font-weight:700;text-shadow:0 2px 4px rgba(0,0,0,0.5);letter-spacing:2px}
+    .main-title span{display:block;color:var(--gold);font-size:0.6em;font-weight:400;letter-spacing:5px;opacity:0.8;margin-top:8px}
+    
+    /* Content Section */
+    .content{background-color:var(--secondary);padding:20px}
+    
+    /* Button group */
+    .btn-container{display:grid;grid-template-columns:repeat(2, 1fr);gap:10px;margin-bottom:20px}
+    .btn{position:relative;padding:16px 10px;background:#111;border:none;color:var(--text);font-weight:400;font-size:0.9em;cursor:pointer;text-transform:uppercase;letter-spacing:1px;border-radius:4px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 6px rgba(0,0,0,0.2)}
+    .btn i{font-size:1.8em;margin-bottom:10px;color:var(--primary)}
+    .btn:hover{background:#222;transform:translateY(-3px)}
+    .btn::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--primary);transform:scaleX(0);transition:transform 0.3s ease;transform-origin:right}
+    .btn:hover::after{transform:scaleX(1);transform-origin:left}
+    .btn span{position:relative;z-index:1}
+    
+    /* Hot tag */
+    .hot-tag{position:absolute;top:0;right:0;background:var(--primary);color:#fff;font-size:10px;padding:3px 6px;border-radius:0 0 0 4px;font-weight:700;opacity:0;transform:translateY(-100%);transition:opacity 0.3s ease, transform 0.3s ease}
+    .btn:hover .hot-tag{opacity:1;transform:translateY(0)}
+    
+    /* Join Now Button */
+    .join-now{background:var(--primary);color:var(--text);padding:20px;text-align:center;font-size:1.2em;font-weight:700;text-transform:uppercase;letter-spacing:2px;cursor:pointer;margin:10px 0 20px;border-radius:4px;box-shadow:0 5px 15px rgba(255,0,102,0.3);position:relative;overflow:hidden}
+    .join-now::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);transition:0.5s;z-index:1}
+    .join-now:hover::before{left:100%}
+    .join-now:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(255,0,102,0.5)}
+    
+    /* Rating stars */
+    .rating{display:flex;align-items:center;justify-content:center;margin-bottom:15px}
+    .stars{color:var(--gold);font-size:1.2em;letter-spacing:3px;margin-right:10px}
+    .rating-text{color:var(--text-secondary);font-size:0.9em}
+    
+    /* Info Box */
+    .info-box{background:#111;border-radius:6px;padding:20px;margin-top:20px}
+    .info-box p{margin-bottom:12px;color:var(--text-secondary);position:relative;padding-left:25px;font-size:0.9em;line-height:1.6}
+    .info-box p:last-child{margin-bottom:0}
+    .info-box p::before{content:"⚡";position:absolute;left:0;top:0;color:var(--primary)}
+    .info-box strong{color:var(--text);font-weight:600}
+    
+    /* Age verification */
+    .age-verification{background:rgba(255,0,0,0.1);border-radius:4px;padding:10px;margin-top:20px;display:flex;align-items:center;justify-content:center;font-size:0.8em;color:var(--text-secondary);text-align:center}
+    .age-verification::before{content:'🔞';margin-right:10px;font-size:1.2em}
+    
+    /* Loader styling */
+    #loader{display:none;position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,0.9);color:var(--text);font-size:1.2em;font-weight:400;justify-content:center;align-items:center;z-index:100;backdrop-filter:blur(5px)}
+    #loader::after{content:"";width:25px;height:25px;border:2px solid rgba(255,255,255,0.1);border-radius:50%;border-top-color:var(--primary);margin-left:10px;animation:spin 0.8s linear infinite}
+    @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+    
+    /* Responsive */
+    @media (max-width:500px){
+      .btn-container{grid-template-columns:1fr}
+      .main-title{font-size:1.8em}
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="wal69 Premium Content">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <body>
-<div class=container>
-<div id=loader>⏳ Redirecting, please wait...</div>
-<h1>🔥 wal69 Zone 🔥</h1>
-<button class=btn onclick='openWithAd("https://otieu.com/4/9337564","https://wal69.com")'>🎬 Video Here</button>
-<button class=btn onclick='openWithAd("https://otieu.com/4/9337564","https://wal69.com")'>💬 Chat Here</button>
-<button class=btn onclick='openWithAd("https://otieu.com/4/9337564","https://wal69.com")'>📷 Photos Here</button>
-<button class=btn onclick='openWithAd("https://otieu.com/4/9337564","https://wal69.com")'>👩‍🦰 Deal</button>
-<div class=desc>
-<p>වීඩියෝ එක බලන්න ආවනම් <strong>Video Here</strong> කියන එක ඔබන්න.</p>
-<p>Chat කරලා ආතල් එකක් ගන්න ආවනම් <strong>Chat Here</strong> කියන එක ඔබන්න.</p>
-<p>Photos බලන්න ආවනම් <strong>Photos Here</strong> කියන එක ඔබන්න.</p>
-<p>කෙනෙක් හොයාගන්න ආවනම් <strong>Deal</strong> කියන එක ඔබන්න.</p>
-</div>
-</div>
-<script>function openWithAd(e,n){document.getElementById("loader").style.display="flex",window.open(n,"_blank"),setTimeout((()=>{window.location.href=e}),100)}document.addEventListener("keydown",(function(e){if("F12"===e.key||e.ctrlKey&&e.shiftKey&&["I","J","C"].includes(e.key)||e.ctrlKey&&"u"===e.key)return e.preventDefault(),!1})),document.addEventListener("contextmenu",(function(e){e.preventDefault()}))</script>
-<script>var _Hasync=_Hasync||[];_Hasync.push(["Histats.start","1,4941486,4,0,0,0,00010000"]),_Hasync.push(["Histats.fasi","1"]),_Hasync.push(["Histats.track_hits",""]),function(){var s=document.createElement("script");s.type="text/javascript",s.async=!0,s.src="//s10.histats.com/js15_as.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(s)}()</script>
-<noscript><a href=/ target=_blank><img src=//sstatic1.histats.com/0.gif?4941486&101 alt="website free tracking" border=0></a></noscript>
+  <div class="container">
+    <div id="loader">Connecting to secure server...</div>
+    <div class="premium-badge">Premium</div>
+    
+    <div class="header">
+      <div class="header-content">
+        <h1 class="main-title">WAL69<span>EXCLUSIVE ACCESS</span></h1>
+        <div class="rating">
+          <div class="stars">★★★★★</div>
+          <div class="rating-text">4.9/5 (2,431 ratings)</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="join-now" onclick='openWithAd("https://otieu.com/4/9337564","https://wal69.com")'>
+        JOIN NOW
+      </div>
+      
+      <div class="btn-container">
+        <button class="btn" onclick='openWithAd("https://otieu.com/4/9337564","https://wal69.com")'>
+          <div class="hot-tag">HOT</div>
+          <i class="fas fa-video"></i>
+          <span>Videos</span>
+        </button>
+        <button class="btn" onclick='openWithAd("https://otieu.com/4/9337564","https://wal69.com")'>
+          <div class="hot-tag">NEW</div>
+          <i class="fas fa-comments"></i>
+          <span>Live Chat</span>
+        </button>
+        <button class="btn" onclick='openWithAd("https://otieu.com/4/9337564","https://wal69.com")'>
+          <div class="hot-tag">VIP</div>
+          <i class="fas fa-images"></i>
+          <span>Private Photos</span>
+        </button>
+        <button class="btn" onclick='openWithAd("https://otieu.com/4/9337564","https://wal69.com")'>
+          <div class="hot-tag">HOT</div>
+          <i class="fas fa-user-friends"></i>
+          <span>Hookups</span>
+        </button>
+      </div>
+      
+      <div class="info-box">
+        <p>වීඩියෝ එක බලන්න ආවනම් <strong>HD Videos</strong> කියන එක ඔබන්න.</p>
+        <p>Chat කරලා ආතල් එකක් ගන්න ආවනම් <strong>Live Chat</strong> කියන එක ඔබන්න.</p>
+        <p>Photos බලන්න ආවනම් <strong>Private Photos</strong> කියන එක ඔබන්න.</p>
+        <p>කෙනෙක් හොයාගන්න ආවනම් <strong>Hookups</strong> කියන එක ඔබන්න.</p>
+      </div>
+      
+      <div class="age-verification">
+        This website contains age-restricted content. By entering, you confirm you are at least 18 years old.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openWithAd(e,n){document.getElementById("loader").style.display="flex";window.open(n,"_blank");setTimeout(()=>{window.location.href=e},100)}
+    document.addEventListener("keydown",function(e){if("F12"===e.key||e.ctrlKey&&e.shiftKey&&["I","J","C"].includes(e.key)||e.ctrlKey&&"u"===e.key)return e.preventDefault(),!1});
+    document.addEventListener("contextmenu",function(e){e.preventDefault()});
+  </script>
+  <script>
+    var _Hasync=_Hasync||[];_Hasync.push(["Histats.start","1,4941486,4,0,0,0,00010000"]);_Hasync.push(["Histats.fasi","1"]);_Hasync.push(["Histats.track_hits",""]);(function(){var s=document.createElement("script");s.type="text/javascript";s.async=!0;s.src="//s10.histats.com/js15_as.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(s)})();
+  </script>
+  <noscript><a href=/ target=_blank><img src=//sstatic1.histats.com/0.gif?4941486&101 alt="website stats" border=0></a></noscript>
 </body>
 </html>
